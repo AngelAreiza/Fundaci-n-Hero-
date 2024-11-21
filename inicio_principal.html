@@ -10,17 +10,20 @@
 </head>
 
 <body>
-    <header class="contenedor">
-        <h1>Fundación Hero</h1>
-        <h2>"Tu generosidad puede cambiar una vida. Dona hoy y haz la diferencia."</h2>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Donar</a></li>
-                <li><a href="#">Quienes somos</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <div class="header-content">
+        <h1>Fundación hero</h1>
+        <button class="menu-button" onclick="toggleMenu()">Menu</button>
+    </div>
+    <nav id="menu" class="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Donar</a></li>
+            <li><a href="somos.html">Quienes somos?</a></li>
+            <li><a href="#">Registrate</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main>
         <section class="inicio">
@@ -102,8 +105,7 @@
         <p>Teléfono: +57 300 1234567</p> 
         <p>Dirección: Calle 123 #45-67, Ciudad, País</p>
         <h3>&copy; 2024 Ninja_Coder$</h3>
-        <img src="../imagenes/logo.png" alt="">
-        
+        <img src="../imagenes/logo.png" alt="logo_del_equipo_de_programadores">    
     </footer>
 
     <script src="script.js"></script>

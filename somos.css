@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0; /* Color de fondo más suave */
+    color: #333;
+}
+header{
+    background-color: #041A36;
+    padding: 10px;
+    color: white;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-button{
+    background-color: #041A36;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.menu{
+    max-height: 0;
+    overflow: hidden;
+    background-color: #041A36;
+    transition: max-height 0.5s ease-out;
+}
+
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    padding: 10px;
+    text-align: center;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.menu li a:hover{
+    background: #3e5b80;
+}
+
+.menu.show{
+    max-height: 500px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #041A36;
+}
+
+p {
+    margin: 0 0 10px;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: #041A36;
+    padding: 20px;
+    color: white;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.container nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.container nav ul li {
+    margin: 0 15px;
+}
+
+.container nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Espaciado interno */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.container nav ul li a:hover {
+    background-color: rgb(47, 47, 170);
+    border-radius: 3px;
+}
+
+.somos {
+    background-color: #fff; /* Fondo blanco para mayor contraste */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.somos h2 {
+    margin-bottom: 15px; /* Espaciado entre el título y el contenido */
+}
+
+.somos p {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #041A36;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; /* Espacio adicional entre el footer y el texto */
+}
+
+footer h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+footer img {
+    height: 40px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .contact-info {
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer .contact-info p {
+    margin: 3px 0;
+}

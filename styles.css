@@ -21,38 +21,56 @@ p {
     line-height: 1.6;
 }
 
-.contenedor {
+header{
     background-color: #041A36;
-    padding: 20px;
+    padding: 10px;
     color: white;
-    border-radius: 10px; /* Bordes redondeados */
 }
 
-.contenedor h2 {
-    margin-bottom: 20px;
-}
-
-.contenedor nav ul {
+.header-content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-button{
+    background-color: #041A36;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.menu{
+    max-height: 0;
+    overflow: hidden;
+    background-color: #041A36;
+    transition: max-height 0.5s ease-out;
+}
+
+.menu ul{
     list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
-.contenedor nav ul li {
-    margin: 0 15px;
+.menu li{
+    padding: 10px;
+    text-align: center;
 }
 
-.contenedor nav ul li a {
+.menu li a{
     color: white;
     text-decoration: none;
-    padding: 10px 15px; /* Espaciado interno */
-    transition: background-color 0.3s; /* Efecto de transición */
+    display: block;
 }
 
-.contenedor nav ul li a:hover {
-    background-color: rgb(47, 47, 170);
-    border-radius: 3px;
+.menu li a:hover{
+    background: #3e5b80;
+}
+
+.menu.show{
+    max-height: 500px;
 }
 
 .inicio {
@@ -158,41 +176,6 @@ p {
     border-radius: 5px;
 }
 
-footer {
-    background-color: #041A36;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative; /* Cambiado a relative para evitar problemas de posicionamiento */
-    bottom: 0;
-    width: 100%;
-    display: flex; /* Usar flexbox para alinear elementos */
-    justify-content: center; /* Centrar los elementos en el footer */
-    align-items: center; /* Alinear verticalmente los elementos */
-}
-
-footer h3 {
-    margin: 0; /* Eliminar márgenes para mejor alineación */
-    margin-right: 10px; /* Espacio entre el texto y la imagen */
-}
-
-footer img {
-    height: 40px; /* Ajustar la altura de la imagen */
-    width: auto; /* Mantener la proporción de la imagen */
-}
-
-footer p{
-    margin: 5px 0;
-}
-footer .contact-info{ 
-    margin-top: 10px; 
-    text-align: center;
-} 
-
-footer .contact-info p{ 
-    margin: 3px 0; 
-}
-
 .donaciones {
     margin: 20px auto;
     width: 80%;
@@ -225,4 +208,42 @@ footer .contact-info p{
 
 #tablaDonaciones tr:hover {
     background-color: #ddd;
+}
+
+footer {
+    background-color: #041A36;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; /* Espacio adicional entre el footer y el texto */
+}
+
+footer h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+footer img {
+    height: 40px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .contact-info {
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer .contact-info p {
+    margin: 3px 0;
 }

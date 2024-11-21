@@ -31,7 +31,7 @@ function realizarPago(event) {
     totalDonaciones += monto;
 
     // Actualizar el total en la interfaz
-    document.getElementById("totalDonaciones").innerText = totalDonaciones.toFixed(2);
+    document.getElementById("totalDonaciones").innerText = totalDonaciones.toLocaleString('es-ES',{minimumFractionDigits: 0, maximumFractionDigits: 0});
 
     // Agregar la donación a la tabla
     const tablaDonaciones = document.getElementById("tablaDonaciones").getElementsByTagName('tbody')[0];
@@ -43,7 +43,7 @@ function realizarPago(event) {
 
     celdaNombre.innerText = nombre;
     celdaMetodoPago.innerText = metodoPago;
-    celdaMonto.innerText = monto.toFixed(2);
+    celdaMonto.innerText = monto.toLocaleString('es-ES',{minimumFractionDigits: 0, maximumFractionDigits: 0});
 
     // Limpiar el formulario de pago
     document.getElementById("formPago").reset();
@@ -52,3 +52,8 @@ function realizarPago(event) {
 
 // Agrega un listener para el evento submit del formulario de registro
 document.getElementById("registro").addEventListener("submit", habilitarPago);
+
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+}
